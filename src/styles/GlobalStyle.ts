@@ -31,7 +31,7 @@ export const GlobalStyle = createGlobalStyle<Props>`
     @media (max-width: 720px){
       font-size:87.5%;
     }
-    font-family: 'Encode Sans Expanded', sans-serif;
+    font-family: 'EB Garamond', serif;
   }
 
   body{
@@ -40,7 +40,13 @@ export const GlobalStyle = createGlobalStyle<Props>`
   }
 
   body, input, textarea, select, button{
-    font: 400 1rem 'Encode Sans Expanded', sans-serif;
+    font: 400 1rem 'EB Garamond', serif;
+  }
+  span, small {
+    font: 400 0.875rem 'EB Garamond', serif;
+  }
+  strong {
+    font: 600 1rem 'EB Garamond', serif;
   }
 
   button{
@@ -50,7 +56,7 @@ export const GlobalStyle = createGlobalStyle<Props>`
   a{
     color:inherit;
     text-decoration: none;
-    font: 400 1rem 'Encode Sans Expanded', sans-serif;
+    font: 400 1rem 'EB Garamond', serif;
   }
 
 `
