@@ -15,7 +15,7 @@ type SubtitleProps = {
 
 export const InfoContainer = styled.div<ContainerProps>`
   color: #fff;
-  background: ${({lightBg = false}) => (lightBg ? '#f9f9f9' : '#010606')};
+  background: ${({lightBg = false}) => (lightBg ? '#f9f9f9' : '#000E29')};
 
   @media screen and (max-width: 768px) {
     padding: 100px 0;
@@ -58,7 +58,7 @@ export const TextWrapper = styled.div`
   padding-bottom: 60px;
 `
 export const TopLine = styled.p`
-  color: #01be71;
+  color: #39837D;
   font-size: 1rem;
   line-height: 1rem;
   font-weight: 700;
@@ -71,7 +71,7 @@ export const Heading = styled.h2<HeadingProps>`
   font-size: 3rem;
   line-height: 1.1;
   font-weight: 600;
-  color: ${({lightText = false}) => (lightText ? '#f7f8fa' : '#010606')};
+  color: ${({lightText = false}) => (lightText ? '#f7f8fa' : '#000E29')};
 
   @media screen and (max-width: 480px) {
     font-size: 2rem;
@@ -82,7 +82,7 @@ export const Subtitle = styled.h3<SubtitleProps>`
   margin-bottom: 35px;
   font-size: 1.125rem;
   line-height: 1.5rem;
-  color: ${({darkText = false}) => (darkText ? '#010606' : '#fff')};
+  color: ${({darkText = false}) => (darkText ? '#000E29' : '#fff')};
 `
 export const BtnWrapper = styled.div`
   display: flex;

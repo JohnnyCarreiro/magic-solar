@@ -11,8 +11,8 @@ export const Container = styled.section`
   overflow: hidden;
   background: linear-gradient(
     108deg,
-    rgba(1, 147, 86, 1) 0%,
-    rgba(10, 201, 122, 1) 100%
+    rgba(57, 131, 125, 1) 0%,
+    rgba(78, 177, 169, 1) 100%
   );
 `
 export const FormWrapper = styled.div`
@@ -48,7 +48,7 @@ export const FormContent = styled.div`
   }
 `
 export const Form = styled.form`
-  background: #010101;
+  background: #000E29;
   max-width: 400px;
   width: 100%;
   height: auto;
@@ -82,7 +82,7 @@ export const FormInput = styled.input`
   border-radius: 4px;
 `
 export const FormButton = styled.button`
-  background: #01be71;
+  background: #39837D;
   padding: 16px 0;
   border: none;
   border-radius: 4px;

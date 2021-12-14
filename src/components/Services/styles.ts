@@ -7,7 +7,7 @@ export const ServicesContainer = styled.section`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: #010606;
+  background: #000E29;
 
   @media screen and (max-width: 768px) {
     height: 1100px;
@@ -73,11 +73,11 @@ export const ServiceHeading = styled.h3`
   font-weight: 700;
   margin-bottom: 10px;
   margin-top: 10px;
-  color: #010606;
+  color: #000E29;
 `
 export const ServiceDescription = styled.p`
   font-size: 1rem;
   font-weight: 400;
   margin-bottom: 10px;
-  color: #010606;
+  color: #000E29;
 `
