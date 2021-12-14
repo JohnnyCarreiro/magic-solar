@@ -12,7 +12,7 @@ export const SidebarContainer = styled.aside<Props>`
   z-index: 999;
   width: 100%;
   height: 100%;
-  background: #0d0d0d;
+  background: #000E29;
   display: grid;
   align-items: center;
   top: 0;
@@ -65,7 +65,7 @@ export const SidebarItem = styled.li`
   }
   &:hover {
     background: ${shade(0.2,'#39837D')};
-    color: 010606;
+    color: #fff;
     transition: all 0.2s ease-in-out;
   }
 `
@@ -82,7 +82,7 @@ export const SidebarLink = styled(LinkS)`
 
   &.active {
     background: #39837D;
-    color: 010606;
+    color: #fff;
   }
 
   /* &:hover {
@@ -99,7 +99,7 @@ export const SidebarBtnLink = styled.a`
   background: #39837D;
   white-space: nowrap;
   padding: 16px 64px;
-  color: #000E29;
+  color: #fff;
   font-size: 1rem;
   outline: none;
   border: none;
