@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import Head from 'next/head'
 import { Container } from '../styles/Home'
 import HeroSection from '@/components/HeroSection'
@@ -10,7 +9,7 @@ export default function Home() {
   return (
     <Container>
       <Head>
-        <title>Template Next Tipescript</title>
+        <title>Magic Solar</title>
       </Head>
       <HeroSection />
       <InfoSection {...homeObjOne} />
