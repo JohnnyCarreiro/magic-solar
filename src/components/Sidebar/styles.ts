@@ -60,11 +60,11 @@ export const SidebarItem = styled.li`
   transition: 0.2s ease-in-out;
 
   &.active {
-    background: #01be71;
+    background: #39837D;
     color: 010606;
   }
   &:hover {
-    background: ${shade(0.2,'#01be71')};
+    background: ${shade(0.2,'#39837D')};
     color: 010606;
     transition: all 0.2s ease-in-out;
   }
@@ -81,12 +81,12 @@ export const SidebarLink = styled(LinkS)`
   height: 100%;
 
   &.active {
-    background: #01be71;
+    background: #39837D;
     color: 010606;
   }
 
   /* &:hover {
-    color: #01be71;
+    color: #39837D;
     transition: all 0.2s ease-in-out;
   } */
 `
@@ -96,10 +96,10 @@ export const SidebarBtnWrapper = styled.div`
 `
 export const SidebarBtnLink = styled.a`
   border-radius: 50px;
-  background: #01be71;
+  background: #39837D;
   white-space: nowrap;
   padding: 16px 64px;
-  color: #010606;
+  color: #000E29;
   font-size: 1rem;
   outline: none;
   border: none;
@@ -108,7 +108,7 @@ export const SidebarBtnLink = styled.a`
 
   &:hover {
     background: #fff;
-    color: #010606;
+    color: #000E29;
     transition: all 0.2s ease-in-out;
   }
 `
