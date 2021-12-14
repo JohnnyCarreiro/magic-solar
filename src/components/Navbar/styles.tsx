@@ -5,7 +5,7 @@ type NavProps = {
   scrollNav: boolean
 }
 export const Nav = styled.nav<NavProps>`
-  background: ${({scrollNav = false}) => (scrollNav ? '#000' : 'transparent')};
+  background: ${({scrollNav = false}) => (scrollNav ? '#AC9A52' : 'transparent')};
   height: 80px;
   margin-top: -80px;
   display: flex;
@@ -29,8 +29,8 @@ export const NavContainer = styled.div`
   padding: 0 24px;
   max-width: 1100px;
 `
-export const NavLogo = styled.a`
-  color: #fff;
+export const NavLogo = styled.a<NavProps>`
+  color: ${({scrollNav = false}) => (scrollNav ? '#000E29' : '#fff')};
   justify-self: flex-start;
   cursor: pointer;
   font-size: 1.5rem;
@@ -41,7 +41,7 @@ export const NavLogo = styled.a`
   text-decoration: none;
 `
 
-export const MobileIcon = styled.div `
+export const MobileIcon = styled.div`
   display: none;
 
   @media screen and (max-width: 768px) {
@@ -52,7 +52,6 @@ export const MobileIcon = styled.div `
     transform: translate(-100%, 80%);
     font-size: 1.8rem;
     cursor: pointer;
-    color: #fff;
   }
 `
 export const NavMenu = styled.ul `
@@ -71,14 +70,16 @@ export const NavItem = styled.li `
   text-align: center;
   height: 80px;
 `
-export const NavLink = styled(LinkS) `
-  color: #fff;
+export const NavLink = styled(LinkS)<NavProps> `
+  color: ${({scrollNav = false}) => (scrollNav ? '#000E29' : '#fff')};
   display: flex;
   align-items: center;
   text-decoration: none;
   padding: 0 1rem;
   /* height: 100%; */
   cursor: pointer;
+  font-size: 1rem;
+  text-transform: uppercase;
 
   &.active {
     border-bottom: 3px solid #39837D;
@@ -97,7 +98,7 @@ export const NavBtnLink = styled.a`
   background: #39837D;
   white-space: nowrap;
   padding: 10px 22px;
-  color: #000E29;
+  color: #fff;
   font-size: 1rem;
   outline: none;
   border: none;

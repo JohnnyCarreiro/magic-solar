@@ -32,11 +32,11 @@ function Navbar({ children, toggle }: NavbarProps) {
     scroll.scrollToTop()
   },[])
   return (
-    <IconContext.Provider value={{color: '#fff'}}>
+    <IconContext.Provider value={{color: scrollNav ? '#000E29' : '#fff'}}>
       <Nav scrollNav={scrollNav} >
         <NavContainer>
           <Link href='/' passHref >
-            <NavLogo onClick={toggleHome} >ConsoliDados</NavLogo>
+            <NavLogo scrollNav={scrollNav} onClick={toggleHome} > Magic Solar </NavLogo>
           </Link>
           <MobileIcon onClick={toggle} >
             <FaBars />
@@ -44,13 +44,13 @@ function Navbar({ children, toggle }: NavbarProps) {
           <NavMenu>
             {
               navLinks.map((link) => (
-                <NavLink key={link.id} name={link.name} id={link.id} />
+                <NavLink scrollNav={scrollNav} key={link.id} name={link.name} id={link.id} />
               ))
             }
           </NavMenu>
           <NavBtn>
-            <Link href='/signin' passHref >
-              <NavBtnLink>Sing In</NavBtnLink>
+            <Link href='/agenda' passHref >
+              <NavBtnLink>Agenda</NavBtnLink>
             </Link>
           </NavBtn>
         </NavContainer>

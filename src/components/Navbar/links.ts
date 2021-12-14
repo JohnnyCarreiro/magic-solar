@@ -1,6 +1,6 @@
 export const navLinks = [
-  {name: 'About',id: 'about'},
-  {name: 'Discover',id: 'discover'},
-  {name: 'Services',id: 'services'},
-  {name: 'Sign Up',id: 'signup'},
+  {name: 'Sobre',id: 'about'},
+  {name: 'Como Atuamos',id: 'how-we-work'},
+  {name: 'Serviços',id: 'services'},
+  {name: 'Energia Solar',id: 'solar-energy'},
 ]

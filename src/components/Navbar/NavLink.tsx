@@ -8,9 +8,10 @@ type Props =  {
   name: string
   id: string
   attrs?: Component<HTMLProps<HTMLButtonElement>>
+  scrollNav: boolean
 }
 
-export const NavLink:React.FC<Props> = ({name, id, ...rest}) => {
+export const NavLink:React.FC<Props> = ({name, id, scrollNav, ...rest}) => {
   const { pathname } = useRouter()
 
   return (
@@ -26,6 +27,7 @@ export const NavLink:React.FC<Props> = ({name, id, ...rest}) => {
               spy={true}
               // exact="true"
               offset={-80}
+              scrollNav={scrollNav}
             >
               {name}
             </LinkS>
@@ -39,6 +41,7 @@ export const NavLink:React.FC<Props> = ({name, id, ...rest}) => {
             spy={true}
             // exact="true"
             offset={-80}
+            scrollNav={scrollNav}
             {...rest}
           >
             {name}
