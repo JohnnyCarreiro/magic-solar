@@ -1,6 +1,4 @@
 import { useState } from 'react'
-import Navbar from '@/components/Navbar'
-import { Sidebar } from '@/components/Sidebar'
 import Head from 'next/head'
 import { Container } from '../styles/Home'
 import HeroSection from '@/components/HeroSection'
@@ -9,12 +7,6 @@ import { homeObjOne, homeObjTwo, homeObjThree } from '@/components/InfoSection/D
 import { Services } from '@/components/Services'
 
 export default function Home() {
-  const [isOpen, setIsOpen] = useState(false)
-
-  const toggle = () => {
-    setIsOpen(!isOpen)
-  }
-
   return (
     <Container>
       <Head>
