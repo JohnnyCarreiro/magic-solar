@@ -25,7 +25,7 @@ export const homeObjOne = {
     'A MAGIC SOLAR foi fundada no ano de 2015 com o intuito de proporcionar um serviço especializado e concreto na implementação de sistemas de geração distribuída de energia renovável.',
     imgStart: false,
     //image
-  img: require('../assets/images/svg-1.svg').default,
+  img: require('../assets/images/logo.svg').default,
   alt: 'Logo da Magic Solar',
   buttonLabel: 'Saiba Mais',
   scrollToId:'how-we-work',
