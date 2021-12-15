@@ -8,25 +8,24 @@ import {
   ServiceDescription
 } from './styles'
 
-type ServiceInfo = {
+type ResultInfo = {
   heading: string
   description: string
   img: any
   alt: string
 }
 
-interface ServicesProps {
-  services: ServiceInfo[]
+interface ResultsProps {
+  results: ResultInfo[]
 }
 
-export const Services:React.FC<ServicesProps> = ({services}) => {
-  console.log(services[0].img)
+export const Results:React.FC<ResultsProps> = ({results}) => {
   return (
     <ServicesContainer id={'services'}>
       <ServicesMainHeading>Our Services</ServicesMainHeading>
       <ServicesWrapper>
-        {services.map((service) => {
-          const { heading, description, img, alt } = service
+        {results.map((result) => {
+          const { heading, description, img, alt } = result
           return (
             <ServiceCard>
               <ServiceIcon src={img} alt={alt} />

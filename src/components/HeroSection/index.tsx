@@ -1,15 +1,28 @@
-import { ReactNode, useCallback, useState } from 'react'
-import Link from 'next/link'
+import { useCallback, useState } from 'react'
 
-import { ArrowForward, ArrowRight, HeroBg, HeroBtnWrapper, HeroContainer, HeroContent, HeroH1, HeroP, VideoBg } from './styles'
 import { Button } from '@/components/Button/ButtonElements'
 import Video from '@/assets/Solar-Energy.mp4'
+import {
+  ArrowForward,
+  ArrowRight,
+  HeroBg,
+  HeroBtnWrapper,
+  HeroContainer,
+  HeroContent,
+  HeroH1,
+  HeroP,
+  VideoBg
+} from './styles'
 
-interface HeroSectionProps {
-  children?: ReactNode
+type HeroSectionProps = {
+    heading: string
+    description: string
+    cta: string
+    scrollId: string
 }
 
-function HeroSection({ children }: HeroSectionProps) {
+export const  HeroSection: React.FC<HeroSectionProps> = (heroSection) => {
+  const { heading, description, cta, scrollId } = heroSection
   const [hover, setHover] = useState(false)
 
   const onHover = useCallback(() => {
@@ -29,20 +42,16 @@ function HeroSection({ children }: HeroSectionProps) {
         />
       </HeroBg>
       <HeroContent>
-        <HeroH1>Sua empresa faz negócios on-line?</HeroH1>
+        <HeroH1>{heading}</HeroH1>
         <HeroP>
-          Mussum Ipsum, cacilds vidis litro abertis. Per aumento de cachacis, eu reclamis. Todo mundo vê os porris que eu tomo, mas ninguém vê os tombis que eu levo! Suco de cevadiss deixa as pessoas mais interessantis. Admodum accumsan disputationi eu sit. Vide electram sadipscing et per.
+          {description}
         </HeroP>
         <HeroBtnWrapper>
-          <Link href='signup' passHref >
-            <Button to='about' onMouseEnter={onHover} onMouseLeave={onHover} >
-              De volta ao negócios {hover ? <ArrowForward/> : <ArrowRight/>}
-            </Button>
-          </Link>
+          <Button to={scrollId} onMouseEnter={onHover} onMouseLeave={onHover} >
+            {cta} {hover ? <ArrowForward/> : <ArrowRight/>}
+          </Button>
         </HeroBtnWrapper>
       </HeroContent>
     </HeroContainer>
   )
 }
-
-export default HeroSection

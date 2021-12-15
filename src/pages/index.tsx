@@ -1,30 +1,25 @@
-import { useState } from 'react'
-import Navbar from '@/components/Navbar'
-import { Sidebar } from '@/components/Sidebar'
 import Head from 'next/head'
 import { Container } from '../styles/Home'
-import HeroSection from '@/components/HeroSection'
+import { HeroSection } from '@/components/HeroSection'
 import { InfoSection } from '@/components/InfoSection'
-import { homeObjOne, homeObjTwo, homeObjThree } from '@/components/InfoSection/Data'
 import { Services } from '@/components/Services'
+import { homeObjOne, homeObjTwo, homeObjThree, heroSection, services, results } from '@/Data/Data'
+import { Results } from '@/components/Results'
+
 
 export default function Home() {
-  const [isOpen, setIsOpen] = useState(false)
-
-  const toggle = () => {
-    setIsOpen(!isOpen)
-  }
-
+  console.log('Hoeme: ', services)
   return (
     <Container>
       <Head>
-        <title>Template Next Tipescript</title>
+        <title>Magic Solar</title>
       </Head>
-      <HeroSection />
+      <HeroSection {...heroSection} />
       <InfoSection {...homeObjOne} />
       <InfoSection {...homeObjTwo} />
+      <Services services={services} />
       <InfoSection {...homeObjThree} />
-      <Services />
+      <Results results={results} />
     </Container>
   )
 }

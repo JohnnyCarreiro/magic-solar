@@ -61,7 +61,7 @@ export const FooterLink = styled(LinkS)`
   max-width: 160px;
 
   &:hover {
-    color: #01be71;
+    color: #39837D;
     cursor: pointer;
     transition: all 0.3s ease-out
   }
@@ -111,7 +111,7 @@ export const SocialIconLink = styled.a`
   transition: all 0.3s ease-out;
 
   &:hover {
-    color: #01be71;
+    color: #39837D;
     transition: all 0.3s ease-out;
   }
 `
@@ -122,7 +122,7 @@ export const WebsiteDeveloper = styled.small`
   /* text-align: center; */
 `
 export const DeveloperLink = styled.a`
-  color: #01be71;
+  color: #39837D;
   font-weight: 700;
   font-size: 1rem;
   cursor: pointer;

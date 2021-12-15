@@ -10,10 +10,10 @@ interface Props {
 
 export const Button = styled(LinkS)<Props>`
   border-radius: 50px;
-  background: ${({primary = false})=> (primary ? '#01BF71' : '#010606')};
+  background: ${({primary = false})=> (primary ? '#39837D' : '#000E29')};
   white-space: nowrap;
   padding: ${({big = false})=> (big ? '14px 48px' : '12px 30px')};
-  color: ${({dark = false})=> (dark ? '#010606' : '#fff')};
+  color: ${({dark = false})=> (dark ? '#000E29' : '#fff')};
   font-size: ${({fontBig = false})=> (fontBig ? '1.25rem' : '1rem')};
   outline: none;
   border: none;
@@ -26,7 +26,8 @@ export const Button = styled(LinkS)<Props>`
 
   &:hover {
     transition: all 0.3s ease-in-out;
-    color: ${({primary = false})=> (primary ? '#fff' : '#010606')};
-    background: ${({primary = false})=> (primary ?  '#010606' : '#01BF71')};
+    /* color: ${({primary = false})=> (primary ? '#fff' : '#000E29')}; */
+    color: #fff;
+    background: ${({primary = false})=> (primary ?  '#AC9A52' : '#39837D')};
   }
 `

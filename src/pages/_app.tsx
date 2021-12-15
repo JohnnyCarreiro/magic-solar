@@ -4,7 +4,7 @@ import { ThemeProvider } from 'styled-components'
 
 import theme from 'styles/theme'
 import { GlobalStyle } from 'styles/GlobalStyle'
-import Navbar from '@/components/Navbar'
+import { Navbar } from '@/components/Navbar'
 import { Sidebar } from '@/components/Sidebar'
 import Footer from '@/components/Footer'
 
