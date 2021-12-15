@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const Container = styled.section`
   min-height: 692px;
-  position: fixed;
+  /* position: fixed; */
   top: 0;
   right: 0;
   bottom: 0;
@@ -14,6 +14,8 @@ export const Container = styled.section`
     rgba(57, 131, 125, 1) 0%,
     rgba(78, 177, 169, 1) 100%
   );
+  padding-top: 40px;
+  padding-bottom: 60px;
 `
 export const FormWrapper = styled.div`
   height: 100%;

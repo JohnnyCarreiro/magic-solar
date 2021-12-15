@@ -7,6 +7,7 @@ import { GlobalStyle } from 'styles/GlobalStyle'
 import { Navbar } from '@/components/Navbar'
 import { Sidebar } from '@/components/Sidebar'
 import Footer from '@/components/Footer'
+import { ToastProvider } from '@/Hooks/Toast'
 
 interface MyAppProps extends AppProps {}
 
@@ -19,11 +20,13 @@ export default function MyApp({Component, pageProps}:MyAppProps){
 
     return(
         <ThemeProvider theme={theme} >
-          <Navbar toggle={toggle} />
-          <Sidebar isOpen={isOpen} toggle={toggle} />
-          <Component { ...pageProps }/>
-          <GlobalStyle />
-          <Footer />
+          <ToastProvider>
+            <Navbar toggle={toggle} />
+            <Sidebar isOpen={isOpen} toggle={toggle} />
+            <Component { ...pageProps }/>
+            <GlobalStyle />
+            <Footer />
+          </ToastProvider>
         </ThemeProvider>
     )
 }
