@@ -27,9 +27,9 @@ export const InfoSection:React.FC<InfoSectionProps> = (infoSectionProps) => {
         <InfoRow imgStart={imgStart} >
           <Column1>
             <TextWrapper>
-              <TopLine>{topLine}</TopLine>
+              <TopLine lightBg={lightBg} >{topLine}</TopLine>
               <Heading lightText={lightText} >{headLine}</Heading>
-              <Subtitle darkText={darkText} >{description}</Subtitle>
+              <Subtitle lightTextDesc={lightTextDesc} >{description}</Subtitle>
               <BtnWrapper>
                 <Button
                   primary={primary}
