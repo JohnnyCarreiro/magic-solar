@@ -18,11 +18,11 @@ type HeroSectionProps = {
     heading: string
     description: string
     cta: string
-    scrollId: string
+    scrollToId: string
 }
 
 export const  HeroSection: React.FC<HeroSectionProps> = (heroSection) => {
-  const { heading, description, cta, scrollId } = heroSection
+  const { heading, description, cta, scrollToId } = heroSection
   const [hover, setHover] = useState(false)
 
   const onHover = useCallback(() => {
@@ -47,7 +47,16 @@ export const  HeroSection: React.FC<HeroSectionProps> = (heroSection) => {
           {description}
         </HeroP>
         <HeroBtnWrapper>
-          <Button href={`#${scrollId}`} to={scrollId} onMouseEnter={onHover} onMouseLeave={onHover} >
+          <Button
+            to={scrollToId}
+            href={`/#${scrollToId}`}
+            onMouseEnter={onHover}
+            onMouseLeave={onHover}
+            smooth={true}
+            duration={500}
+            spy={true}
+            offset={-80}
+          >
             {cta} {hover ? <ArrowForward/> : <ArrowRight/>}
           </Button>
         </HeroBtnWrapper>
