@@ -47,7 +47,7 @@ export const  HeroSection: React.FC<HeroSectionProps> = (heroSection) => {
           {description}
         </HeroP>
         <HeroBtnWrapper>
-          <Button to={scrollId} onMouseEnter={onHover} onMouseLeave={onHover} >
+          <Button href={`#${scrollId}`} to={scrollId} onMouseEnter={onHover} onMouseLeave={onHover} >
             {cta} {hover ? <ArrowForward/> : <ArrowRight/>}
           </Button>
         </HeroBtnWrapper>
