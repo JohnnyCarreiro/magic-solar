@@ -42,6 +42,7 @@ export const NavLink:React.FC<Props> = ({name, id, scrollNav, ...rest}) => {
             // exact="true"
             offset={-80}
             scrollNav={scrollNav}
+            href={`#${id}`}
             {...rest}
           >
             {name}
