@@ -1,7 +1,7 @@
 import { useCallback, useState } from 'react'
 
 import { Button } from '@/components/Button/ButtonElements'
-import Video from '@/assets/Solar-Energy.mp4'
+import Video from '@/assets/Solar-Energy.webm'
 import {
   ArrowForward,
   ArrowRight,
