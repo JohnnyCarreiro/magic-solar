@@ -98,21 +98,21 @@ export const services = [
 ]
 export const results = [
   {
-    heading: '',
-    description:'',
-    img:'',
-    alt:''
+    heading: 'Service one',
+    description:'Per aumento de cachacis, eu reclamis. Paisis, filhis, espiritis santis.',
+    img: require('../assets/images/services/svg-1.svg').default,
+    alt:'image one'
   },
   {
-    heading: '',
-    description:'',
-    img:'',
-    alt:''
+    heading: 'Service one',
+    description:'Per aumento de cachacis, eu reclamis. Paisis, filhis, espiritis santis.',
+    img: require('../assets/images/services/svg-1.svg').default,
+    alt:'image 2'
   },
   {
-    heading: '',
-    description:'',
-    img:'',
-    alt:''
+    heading: 'Service one',
+    description:'Per aumento de cachacis, eu reclamis. Paisis, filhis, espiritis santis.',
+    img: require('../assets/images/services/svg-1.svg').default,
+    alt:'iamge 2'
   }
 ]
