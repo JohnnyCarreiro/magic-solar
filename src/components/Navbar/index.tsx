@@ -4,7 +4,7 @@ import { animateScroll as scroll } from 'react-scroll'
 
 import { FaBars } from 'react-icons/fa'
 import { IconContext } from 'react-icons/lib'
-import { navLinks } from './links'
+import { navLinks } from '@/Data/Data'
 import { NavLink } from './NavLink'
 import { Nav, NavContainer, NavLogo, MobileIcon, NavMenu, NavBtn, NavBtnLink } from './styles'
 
@@ -13,7 +13,7 @@ interface NavbarProps {
   toggle: () => void
 }
 
-function Navbar({ children, toggle }: NavbarProps) {
+export const Navbar: React.FC<NavbarProps> = ({ children, toggle }) => {
   const [scrollNav, setScrollNav] = useState(false)
 
   const changeNavBG = useCallback(() => {
