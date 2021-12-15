@@ -1,9 +1,16 @@
 import React, { ReactNode } from 'react'
 import Link from 'next/link'
 
-import { navLinks } from '../Navbar/links'
+import { navLinks } from '@/Data/Data'
 import { NavLink } from './NavLink'
-import { CloseIcon, Icon, SidebarBtnLink, SidebarBtnWrapper, SidebarContainer, SidebarItem, SidebarLink, SidebarMenu, SidebarWrapper } from './styles'
+import { CloseIcon,
+  Icon,
+  SidebarBtnLink,
+  SidebarBtnWrapper,
+  SidebarContainer,
+  SidebarMenu,
+  SidebarWrapper
+} from './styles'
 
 interface SidebarProps {
   children?: ReactNode
