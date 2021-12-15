@@ -30,15 +30,24 @@ function Footer({ children }: FooterProps) {
         <FooterLinksContainer>
           <FooterLinksWrapper>
             <FooterLinksItems>
-              <FooterLinksTitle>About Us</FooterLinksTitle>
+              <FooterLinksTitle>Sobre Nós</FooterLinksTitle>
               <FooterLink
-                to={'home'}
+                to={'about'}
                 smooth={true}
                 duration={500}
                 spy={true}
                 offset={-80}
               >
-                How it works
+                A Megic Solar
+              </FooterLink>
+              <FooterLink
+                to={'how-we-work'}
+                smooth={true}
+                duration={500}
+                spy={true}
+                offset={-80}
+              >
+                Como Atuamos
               </FooterLink>
               <FooterLink
                 to={'home'}
@@ -47,19 +56,10 @@ function Footer({ children }: FooterProps) {
                 spy={true}
                 offset={-80}
               >
-                Testimonial
+                Resultados
               </FooterLink>
               <FooterLink
-                to={'home'}
-                smooth={true}
-                duration={500}
-                spy={true}
-                offset={-80}
-              >
-                Careers
-              </FooterLink>
-              <FooterLink
-                to={'home'}
+                to={'results'}
                 smooth={true}
                 duration={500}
                 spy={true}
@@ -68,67 +68,61 @@ function Footer({ children }: FooterProps) {
                 Investors
               </FooterLink>
               <FooterLink
-                to={'home'}
+                to={''}
+                href={`termos`}
                 smooth={true}
                 duration={500}
                 spy={true}
                 offset={-80}
               >
-                Terms of service
+                Termos de serviços
               </FooterLink>
             </FooterLinksItems>
 
             <FooterLinksItems>
-              <FooterLinksTitle>Contact Us</FooterLinksTitle>
+              <FooterLinksTitle>Contate-nos</FooterLinksTitle>
               <FooterLink
-                to={'home'}
+                to={'contacts'}
+                href={`/agenda`}
                 smooth={true}
                 duration={500}
                 spy={true}
                 offset={-80}
               >
-                Contact
+                Solicite uma visita
               </FooterLink>
               <FooterLink
-                to={'home'}
+                to={'contacts'}
+                href={`/agenda`}
                 smooth={true}
                 duration={500}
                 spy={true}
                 offset={-80}
               >
-                Address
+                Tire suas Dúvidas
               </FooterLink>
               <FooterLink
-                to={'home'}
+                to={'solar-energy'}
                 smooth={true}
                 duration={500}
                 spy={true}
                 offset={-80}
               >
-                Support
+                A Energia solar
               </FooterLink>
               <FooterLink
-                to={'home'}
+                to={'services'}
                 smooth={true}
                 duration={500}
                 spy={true}
                 offset={-80}
               >
-                Destination
-              </FooterLink>
-              <FooterLink
-                to={'home'}
-                smooth={true}
-                duration={500}
-                spy={true}
-                offset={-80}
-              >
-                Sporsorships
+                Processo de projetos
               </FooterLink>
             </FooterLinksItems>
           </FooterLinksWrapper>
           {/* Second Column */}
-          <FooterLinksWrapper>
+          {/* <FooterLinksWrapper>
           <FooterLinksItems>
               <FooterLinksTitle>Social</FooterLinksTitle>
               <FooterLink
@@ -226,7 +220,7 @@ function Footer({ children }: FooterProps) {
                 Terms of service with some long text, but not long enaought;
               </FooterLink>
             </FooterLinksItems>
-          </FooterLinksWrapper>
+          </FooterLinksWrapper> */}
 
         </FooterLinksContainer>
         <SociaMedia>
@@ -241,19 +235,19 @@ function Footer({ children }: FooterProps) {
               spy={true}
               offset={-80}
             >
-              ConsoliDados
+              Magic Solar
             </ComapnyLogo>
-            <WebsiteRights>ConsoliDados © {new Date().getFullYear()} All Rights Reserved </WebsiteRights>
+            <WebsiteRights>Magic Solar ® {new Date().getFullYear()} Todos os direitos reservados </WebsiteRights>
             <SocilaIcons>
-              <SocialIconLink href="/#" target="_blank" area-label="Facebook" > <FaFacebook /> </SocialIconLink>
-              <SocialIconLink href="/#" target="_blank" area-label="Instagram" > <FaInstagram /> </SocialIconLink>
-              <SocialIconLink href="/#" target="_blank" area-label="YouTube" > <FaYoutube /> </SocialIconLink>
-              <SocialIconLink href="/#" target="_blank" area-label="Twitter" > <FaTwitter /> </SocialIconLink>
-              <SocialIconLink href="/#" target="_blank" area-label="LinkedIn" > <FaLinkedin /> </SocialIconLink>
+              <SocialIconLink href="/#" target="_blank" aria-label="Facebook" > <FaFacebook /> </SocialIconLink>
+              <SocialIconLink href="/#" target="_blank" aria-label="Instagram" > <FaInstagram /> </SocialIconLink>
+              <SocialIconLink href="/#" target="_blank" aria-label="YouTube" > <FaYoutube /> </SocialIconLink>
+              <SocialIconLink href="/#" target="_blank" aria-label="Twitter" > <FaTwitter /> </SocialIconLink>
+              <SocialIconLink href="/#" target="_blank" aria-label="LinkedIn" > <FaLinkedin /> </SocialIconLink>
             </SocilaIcons >
           </SocialMediaWrapper>
           <WebsiteDeveloper>
-            Made with  💚  by: <DeveloperLink href="https://www.johnnycarreiro.com" target="_blank" area-label="JohnnyCarreiro">
+            Made with 💚  by: <DeveloperLink href="https://www.johnnycarreiro.com" target="_blank" aria-label="JohnnyCarreiro">
               Johnny Carreiro
             </DeveloperLink>
           </WebsiteDeveloper>
