@@ -28,7 +28,7 @@ export const InfoSection:React.FC<InfoSectionProps> = (infoSectionProps) => {
             <TextWrapper>
               <TopLine lightBg={lightBg} >{topLine}</TopLine>
               <Heading lightText={lightText} >{headLine}</Heading>
-              <Subtitle lightTextDesc={lightTextDesc} >{description}</Subtitle>
+              <Subtitle lightTextDesc={lightTextDesc} dangerouslySetInnerHTML={{__html: description}} />
               <BtnWrapper>
                 <Button
                   primary={primary}
