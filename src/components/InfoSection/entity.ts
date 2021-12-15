@@ -6,7 +6,6 @@ export type InfoSectionProps = {
   topLine: string
   headLine: string
   description: string
-  buttonLabel: string
   imgStart: boolean
   img: {
     height: number
@@ -14,7 +13,8 @@ export type InfoSectionProps = {
     width: number
   }
   alt: string
+  buttonLabel: string
+  scrollToId: string
   dark: boolean
   primary: boolean
-  darkText: boolean
 }

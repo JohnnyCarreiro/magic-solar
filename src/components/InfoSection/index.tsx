@@ -1,6 +1,5 @@
-import { ReactNode } from 'react'
-import { Button } from '../Button/ButtonElements'
 import { InfoSectionProps } from './entity'
+import { Button } from '../Button/ButtonElements'
 
 import { BtnWrapper, Column1, Column2, Heading, Img, ImgWrapper, InfoContainer, InfoRow, InfoWrapper, Subtitle, TextWrapper, TopLine } from './styles'
 
@@ -13,13 +12,13 @@ export const InfoSection:React.FC<InfoSectionProps> = (infoSectionProps) => {
     topLine,
     headLine,
     description,
-    buttonLabel,
     imgStart,
     img,
     alt,
+    buttonLabel,
+    scrollToId,
     dark,
     primary,
-    darkText
   } = infoSectionProps
   return (
     <InfoContainer id={id} lightBg={lightBg} >
@@ -29,12 +28,13 @@ export const InfoSection:React.FC<InfoSectionProps> = (infoSectionProps) => {
             <TextWrapper>
               <TopLine lightBg={lightBg} >{topLine}</TopLine>
               <Heading lightText={lightText} >{headLine}</Heading>
-              <Subtitle lightTextDesc={lightTextDesc} >{description}</Subtitle>
+              <Subtitle lightTextDesc={lightTextDesc} dangerouslySetInnerHTML={{__html: description}} />
               <BtnWrapper>
                 <Button
                   primary={primary}
                   dark={dark}
-                  to='home'
+                  to={scrollToId}
+                  href={scrollToId}
                   smooth={true}
                   duration={500}
                   spy={true}
