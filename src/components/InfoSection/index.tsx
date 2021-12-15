@@ -48,7 +48,7 @@ export const InfoSection:React.FC<InfoSectionProps> = (infoSectionProps) => {
           </Column1>
           <Column2>
             <ImgWrapper>
-              <Img src={img.src} alt={alt} />
+              <Img src={img} alt={alt} />
             </ImgWrapper>
           </Column2>
         </InfoRow>

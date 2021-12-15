@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import Image from 'next/image'
 
 type ContainerProps = {
   lightBg?: boolean;
@@ -92,7 +93,7 @@ export const ImgWrapper =styled.div`
   max-width: 555px;
   height: 100%;
 `
-export const Img =styled.img`
+export const Img =styled(Image)`
   width: 100%;
   margin: 0 0 10px 0;
   padding-right: 0;
