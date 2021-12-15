@@ -9,7 +9,7 @@ export const heroSection = {
   description:
     'Faça parte da nova realidade do mundo, passe a gerar sua própria energia elétrica e fuja das incertezas de geração, disponibilidade e tarifas. Transformando o que hoje é um passivo em um ativo.',
   cta: 'Saiba Mais',
-  scrollId: 'string'
+  scrollToId: 'solar-energy'
 }
 export const homeObjOne = {
   //color Scheme
@@ -32,7 +32,6 @@ export const homeObjOne = {
   //button
   dark: false,
   primary: true,
-  darkText: false
 }
 export const homeObjTwo = {
   //color Scheme
@@ -55,7 +54,6 @@ export const homeObjTwo = {
   //button
   dark: false,
   primary: false,
-  darkText: false
 }
 export const services = [
   {
@@ -88,7 +86,7 @@ export const homeObjThree = {
   headLine:
     'As vantagens da energia solar',
   description:
-    'Sistemas Off e On Grid: O sistema Off Grid não é ligado na rede da concessionária, ele trabalha com o armazenamento em baterias. O sistema On Grid é ligado a rede da concessionária. Equipamentos Eletrônicos: A energia solar pode ser utilizada em praticamente todos os equipamentos eletrônicos, como televisão, lavadora, computador, aquecedor de água, etc. Dias Nublados ou com Chuva: A captação pelos painéis e geração de energia é possível mesmo em dias nublados, chuvosos e de baixa temperatura. Pois depende da radiação solar captada pelos painéis. Preocupação com o meio ambiente: Não gera impactos ambientais durante a produção de energia.',
+    '<p><strong>Sistemas Off e On Grid:</strong><br/> O sistema Off Grid não é ligado na rede da concessionária, ele trabalha com o armazenamento em baterias. O sistema On Grid é ligado a rede da concessionária. <br/><br/>  <strong>Equipamentos Eletrônicos: </strong><br/> A energia solar pode ser utilizada em praticamente todos os equipamentos eletrônicos, como televisão, lavadora, computador, aquecedor de água, etc.<br/><br/> <strong>Dias Nublados ou com Chuva:</strong> <br/> A captação pelos painéis e geração de energia é possível mesmo em dias nublados, chuvosos e de baixa temperatura. Pois depende da radiação solar captada pelos painéis. Preocupação com o meio ambiente: Não gera impactos ambientais durante a produção de energia.</p>',
     imgStart: false,
     //image
   img: require('../assets/images/svg-1.svg').default,
@@ -98,7 +96,6 @@ export const homeObjThree = {
   //button
   dark: false,
   primary: false,
-  darkText: false
 }
 
 export const results = [
