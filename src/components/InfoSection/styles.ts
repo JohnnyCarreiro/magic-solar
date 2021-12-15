@@ -10,7 +10,7 @@ type HeadingProps = {
   lightText?: boolean;
 }
 type SubtitleProps = {
-  darkText?: boolean;
+  lightTextDesc?: boolean;
 }
 
 export const InfoContainer = styled.div<ContainerProps>`
@@ -57,8 +57,8 @@ export const TextWrapper = styled.div`
   padding-top: 0;
   padding-bottom: 60px;
 `
-export const TopLine = styled.p`
-  color: #39837D;
+export const TopLine = styled.p<ContainerProps>`
+  color:${({lightBg = false}) => (lightBg ? '#39837D' : '#AC9A52')};
   font-size: 1rem;
   line-height: 1rem;
   font-weight: 700;
@@ -82,7 +82,7 @@ export const Subtitle = styled.h3<SubtitleProps>`
   margin-bottom: 35px;
   font-size: 1.125rem;
   line-height: 1.5rem;
-  color: ${({darkText = false}) => (darkText ? '#000E29' : '#fff')};
+  color: ${({lightTextDesc = false}) => (lightTextDesc ? '#fff' : '#000E29'  )};
 `
 export const BtnWrapper = styled.div`
   display: flex;
