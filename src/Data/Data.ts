@@ -3,6 +3,7 @@ export const navLinks = [
   {name: 'Como Atuamos',id: 'how-we-work'},
   {name: 'Serviços',id: 'services'},
   {name: 'Energia Solar',id: 'solar-energy'},
+  {name: 'Contatos',id: 'contacts'},
 ]
 export const heroSection = {
   heading: 'Sua empresa está pronta para o presente?',
@@ -18,7 +19,7 @@ export const homeObjOne = {
   lightText: true,
   lightTextDesc: true,
   //texts
-  topLine: 'Mussum Ipsum, cacilds vidis litro abertis',
+  topLine: 'Projetos sob-medida',
   headLine:
     'Somos a MAGIC SOLAR',
   description:
@@ -118,3 +119,28 @@ export const results = [
     alt:'Garantia'
   }
 ]
+export const contactInfos = {
+  //color Scheme
+  id: 'contacts',
+  lightBg: true,
+  lightText: false,
+  lightTextDesc: false,
+  //texts
+  topLine: 'Um café, suas necessidades e a melhor solução',
+  headLine:
+    'Nossos Contatos',
+  description:
+    'Entre em contato conosco para agendar uma visita com um de nossos representantes. Estamos anciosos em saber mais sobre o projeto que desenvolveremos para você.',
+  phone: '19 98123-4785',
+  email: 'contato@magicsolar.com.br',
+  address: 'Rua Guilherme Pedrini, 51 - Parque dos Eucaliptos - Mogi Guaçu/ SP',
+  imgStart: false,
+  //image
+  img: require('../assets/images/contact.svg').default,
+  alt: 'Logo da Magic Solar',
+  buttonLabel: 'Saiba Mais',
+  scrollToId:'how-we-work',
+  //button
+  dark: false,
+  primary: false,
+}
