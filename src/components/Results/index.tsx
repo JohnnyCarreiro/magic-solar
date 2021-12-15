@@ -21,8 +21,8 @@ interface ResultsProps {
 
 export const Results:React.FC<ResultsProps> = ({results}) => {
   return (
-    <ServicesContainer id={'services'}>
-      <ServicesMainHeading>Our Services</ServicesMainHeading>
+    <ServicesContainer id={'results'}>
+      <ServicesMainHeading>Nossos Resultados</ServicesMainHeading>
       <ServicesWrapper>
         {results.map((result) => {
           const { heading, description, img, alt } = result

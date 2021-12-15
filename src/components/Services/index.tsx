@@ -23,7 +23,7 @@ export const Services:React.FC<ServicesProps> = ({services}) => {
   console.log(services[0].img)
   return (
     <ServicesContainer id={'services'}>
-      <ServicesMainHeading>Our Services</ServicesMainHeading>
+      <ServicesMainHeading>Serviços</ServicesMainHeading>
       <ServicesWrapper>
         {services.map((service) => {
           const { heading, description, img, alt } = service
