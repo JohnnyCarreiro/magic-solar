@@ -1,5 +1,6 @@
 import React, { ReactNode } from 'react'
 import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter, FaYoutube } from 'react-icons/fa'
+import Link from 'next/link'
 
 import {
   ComapnyLogo,
@@ -50,22 +51,13 @@ function Footer({ children }: FooterProps) {
                 Como Atuamos
               </FooterLink>
               <FooterLink
-                to={'home'}
-                smooth={true}
-                duration={500}
-                spy={true}
-                offset={-80}
-              >
-                Resultados
-              </FooterLink>
-              <FooterLink
                 to={'results'}
                 smooth={true}
                 duration={500}
                 spy={true}
                 offset={-80}
               >
-                Investors
+                Resultados
               </FooterLink>
               <FooterLink
                 to={''}
@@ -81,26 +73,30 @@ function Footer({ children }: FooterProps) {
 
             <FooterLinksItems>
               <FooterLinksTitle>Contate-nos</FooterLinksTitle>
-              <FooterLink
-                to={'contacts'}
-                href={`/agenda`}
-                smooth={true}
-                duration={500}
-                spy={true}
-                offset={-80}
-              >
-                Solicite uma visita
-              </FooterLink>
-              <FooterLink
-                to={'contacts'}
-                href={`/agenda`}
-                smooth={true}
-                duration={500}
-                spy={true}
-                offset={-80}
-              >
-                Tire suas Dúvidas
-              </FooterLink>
+              <Link href='/agenda' >
+                <FooterLink
+                  to={'/agenda'}
+                  href={`/agenda`}
+                  smooth={true}
+                  duration={500}
+                  spy={true}
+                  offset={-80}
+                >
+                  Solicite uma visita
+                </FooterLink>
+              </Link>
+              <Link href='/agenda' >
+                <FooterLink
+                  to={'/agenda'}
+                  href={`/agenda`}
+                  smooth={true}
+                  duration={500}
+                  spy={true}
+                  offset={-80}
+                >
+                  Tire suas Dúvidas
+                </FooterLink>
+              </Link>
               <FooterLink
                 to={'solar-energy'}
                 smooth={true}
