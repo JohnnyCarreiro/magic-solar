@@ -53,4 +53,9 @@ export const RegistrationContacts = styled.div`
 `
 export const MessageField = styled.div`
   margin-top: 1rem;
+  > div {
+    &+div{
+      margin-top: 1rem;
+    }
+  }
 `

@@ -1,5 +1,5 @@
 import { Dispatch, SetStateAction, useCallback, useRef, useState } from 'react'
-import { FaEnvelope, FaScroll, FaUser, FaWhatsapp } from 'react-icons/fa'
+import { FaEnvelope, FaPen, FaScroll, FaUser, FaWhatsapp } from 'react-icons/fa'
 import * as Yup from 'yup'
 import { Form } from '@unform/web'
 import { FormHandles } from '@unform/core'
@@ -47,10 +47,10 @@ export const ContactForm: React.FC<RequestFormModalProps> = ({ closeModal, title
   const history = useRouter()
 
   const [name, setName] = useState('')
-  const [surname, setSurname] = useState('')
   const [email, setEmail] = useState('')
   const [phone, setPhone] = useState('')
-  const [observations, setObservations] = useState('')
+  const [subject, setSubject] = useState('')
+  const [message, setMessage] = useState('')
 
   const { addToast } = useToast()
 
@@ -63,22 +63,22 @@ export const ContactForm: React.FC<RequestFormModalProps> = ({ closeModal, title
         name:Yup.string()
           .min(3, String('O Nome deve ter mais que 3 caracteres.'))
           .required(String('Nome obrigatório')),
-        surname:Yup.string()
-          .min(3, String('O Sobrenome deve ter mais que 3 caracteres.'))
-          .required(String('Sobrenome obrigatório')),
         email:Yup.string()
           .required(String('E-mail obrigatório'))
           .email(String('Insira um e-mail válido')),
         phone:Yup.string()
           .required(String('Telefone obrigatório')),
-        observations:Yup.string()
+        subject:Yup.string()
+          .min(3, String('O Sobrenome deve ter mais que 3 caracteres.'))
+          .required(String('Sobrenome obrigatório')),
+        message:Yup.string()
           .required(String('Messagem obrigatório')),
 
       })
       await schema.validate(data, {
         abortEarly:false
       })
-      const newData = {...data, destination:title, requestSource}
+      const newData = {...data}
 
       addToast({
         type:'info',
@@ -89,9 +89,10 @@ export const ContactForm: React.FC<RequestFormModalProps> = ({ closeModal, title
       const response = await axios.post('/api/submit', newData)
       if(response.status === 200 ){
         setName('')
-        setSurname('')
         setEmail('')
         setPhone('')
+        setSubject('')
+        setMessage('')
         // history.push('/')
         addToast({
           type:'success',
@@ -130,15 +131,6 @@ export const ContactForm: React.FC<RequestFormModalProps> = ({ closeModal, title
                 onChange={(event:React.ChangeEvent<HTMLInputElement>) => {setName(event.target.value)}}
                 value={name}
               />
-              <Input
-                name="surname"
-                type="text"
-                icon={FaUser}
-                label={"Sobrenome"}
-                placeholder={"Sobrenome"}
-                onChange={(event:React.ChangeEvent<HTMLInputElement>) => {setSurname(event.target.value)}}
-                value={surname}
-              />
             </RegistrationName>
             <RegistrationContacts>
               <Input
@@ -161,14 +153,23 @@ export const ContactForm: React.FC<RequestFormModalProps> = ({ closeModal, title
               />
             </RegistrationContacts>
             <MessageField>
+              <Input
+                name="subject"
+                type="text"
+                icon={FaPen}
+                label={"Assunto"}
+                placeholder={"Assunto"}
+                onChange={(event:React.ChangeEvent<HTMLInputElement>) => {setSubject(event.target.value)}}
+                value={subject}
+              />
               <TextArea
-                name="observations"
+                name="message"
                 type="text"
                 icon={FaScroll}
                 label={"Message"}
                 placeholder={"Descreva quais experiências você gostaria de incluir no seu pacote"}
-                onChange={(event:React.ChangeEvent<HTMLInputElement>) => {setObservations(event.target.value)}}
-                value={observations}
+                onChange={(event:React.ChangeEvent<HTMLInputElement>) => {setMessage(event.target.value)}}
+                value={message}
               />
             </MessageField>
           </RegistrationInputs>
