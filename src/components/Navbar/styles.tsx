@@ -79,10 +79,11 @@ export const NavLink = styled(LinkS)<NavProps> `
   /* height: 100%; */
   cursor: pointer;
   font-size: 1rem;
+  font-weight: 600;
   text-transform: uppercase;
 
   &.active {
-    border-bottom: 3px solid #39837D;
+    border-bottom: 5px solid #39837D;
   }
 `
 export const NavBtn = styled.nav`
@@ -100,6 +101,7 @@ export const NavBtnLink = styled.a`
   padding: 10px 22px;
   color: #fff;
   font-size: 1rem;
+  font-weight: 600;
   outline: none;
   border: none;
   cursor: pointer;

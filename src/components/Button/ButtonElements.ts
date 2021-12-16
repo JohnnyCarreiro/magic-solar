@@ -15,6 +15,7 @@ export const Button = styled(LinkS)<Props>`
   padding: ${({big = false})=> (big ? '14px 48px' : '12px 30px')};
   color: ${({dark = false})=> (dark ? '#000E29' : '#fff')};
   font-size: ${({fontBig = false})=> (fontBig ? '1.25rem' : '1rem')};
+  font-weight: 600;
   outline: none;
   border: none;
   cursor: pointer;

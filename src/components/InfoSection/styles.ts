@@ -68,7 +68,7 @@ export const TopLine = styled.p<ContainerProps>`
   margin-bottom: 16px;
 `
 export const Heading = styled.h2<HeadingProps>`
-  margin-top: 24px;
+  margin-top: 16px;
   font-size: 3rem;
   line-height: 1.1;
   font-weight: 600;
@@ -78,9 +78,9 @@ export const Heading = styled.h2<HeadingProps>`
     font-size: 2rem;
   }
 `
-export const Subtitle = styled.h3<SubtitleProps>`
+export const Subtitle = styled.div<SubtitleProps>`
   max-width: 440px;
-  margin-bottom: 35px;
+  margin: 16px 0 35px 0;
   font-size: 1.125rem;
   line-height: 1.5rem;
   color: ${({lightTextDesc = false}) => (lightTextDesc ? '#fff' : '#000E29'  )};

@@ -1,6 +1,5 @@
 import styled from 'styled-components'
 
-export const SigninContainer = styled.div`
-  margin-top: 80px;
+export const AgendaContainer = styled.div`
   min-height: 100vh;
 `

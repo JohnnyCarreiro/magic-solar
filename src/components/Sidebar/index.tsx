@@ -31,8 +31,8 @@ export const Sidebar:React.FC<SidebarProps> = ({ children, isOpen = false, toggl
           ))}
         </SidebarMenu>
         <SidebarBtnWrapper>
-          <Link prefetch href='/signin' passHref >
-            <SidebarBtnLink>Sign In</SidebarBtnLink>
+          <Link prefetch href='/agenda' passHref >
+            <SidebarBtnLink>Agenda</SidebarBtnLink>
           </Link>
         </SidebarBtnWrapper>
       </SidebarWrapper>
