@@ -5,7 +5,7 @@ type NavProps = {
   scrollNav: boolean
 }
 export const Nav = styled.nav<NavProps>`
-  background: ${({scrollNav = false}) => (scrollNav ? '#AC9A52' : 'transparent')};
+  background: ${({scrollNav = false, theme}) => (scrollNav ? theme.colors.secondary_brand : 'transparent')};
   height: 80px;
   margin-top: -80px;
   display: flex;
@@ -30,7 +30,7 @@ export const NavContainer = styled.div`
   max-width: 1100px;
 `
 export const NavLogo = styled.a<NavProps>`
-  color: ${({scrollNav = false}) => (scrollNav ? '#000E29' : '#fff')};
+  color: ${({scrollNav = false, theme}) => (scrollNav ? theme.colors.main_brand : theme.colors.grey_1000)};
   justify-self: flex-start;
   cursor: pointer;
   font-size: 1.5rem;
@@ -71,7 +71,7 @@ export const NavItem = styled.li `
   height: 80px;
 `
 export const NavLink = styled(LinkS)<NavProps> `
-  color: ${({scrollNav = false}) => (scrollNav ? '#000E29' : '#fff')};
+  color: ${({scrollNav = false, theme}) => (scrollNav ? theme.colors.main_brand : theme.colors.grey_1000)};
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -83,7 +83,7 @@ export const NavLink = styled(LinkS)<NavProps> `
   text-transform: uppercase;
 
   &.active {
-    border-bottom: 5px solid #39837D;
+    border-bottom: 5px solid ${({theme}) => theme.colors.main_brand};
   }
 `
 export const NavBtn = styled.nav`
@@ -96,7 +96,7 @@ export const NavBtn = styled.nav`
 `
 export const NavBtnLink = styled.a`
   border-radius: 50px;
-  background: #39837D;
+  background: ${({theme}) => theme.colors.main_brand};
   white-space: nowrap;
   padding: 10px 22px;
   color: #fff;
@@ -109,8 +109,8 @@ export const NavBtnLink = styled.a`
 
   &:hover {
     transition: all 0.2 ease-in-out;
-    background: #fff;
-    color: #000E29;
+    background: ${({theme}) => theme.colors.alert};
+    color: ${({theme}) => theme.colors.grey_1000};
   }
 `
 // export const NavLogo2 = styled(Link)`

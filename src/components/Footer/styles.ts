@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import { Link as LinkS } from 'react-scroll'
 
 export const FooterContainer = styled.footer`
-  background-color: #101522;
+  background-color: ${({theme}) => theme.colors.grey_200};
 `
 export const FooterWrapper = styled.div`
   padding: 48px 24px;
@@ -45,7 +45,7 @@ export const FooterLinksItems = styled.div`
   text-align: left;
   width: 160px;
   box-sizing: border-box;
-  color: #fff;
+  color: ${({theme}) => theme.colors.grey_1000};
 
   @media screen and (max-width: 480px) {
     margin:0;
@@ -60,15 +60,15 @@ export const FooterLinksTitle = styled.h3`
   font-size: 1rem;
   margin-bottom: 16px;
 `
-export const FooterLink = styled(LinkS)`
-  color: #fff;
+export const FooterLink = styled.a`
+  color: ${({theme}) => theme.colors.grey_1000};
   margin-bottom: 0.75rem;
   font-size: 1rem;
   transition: all 0.3s ease-out;
   max-width: 160px;
 
   &:hover {
-    color: #39837D;
+    color: ${({theme}) => theme.colors.main_brand};
     cursor: pointer;
     transition: all 0.3s ease-out
   }
@@ -93,7 +93,7 @@ export const SocialMediaWrapper = styled.div`
   }
 `
 export const ComapnyLogo = styled(LinkS)`
-  color: #fff;
+  color: ${({theme}) => theme.colors.grey_1000};
   justify-self: start;
   cursor: pointer;
   font-size: 1.5rem;
@@ -103,7 +103,7 @@ export const ComapnyLogo = styled(LinkS)`
   font-weight: 900;
 `
 export const WebsiteRights = styled.small`
-  color: #fff;
+  color: ${({theme}) => theme.colors.grey_1000};
   margin-bottom: 16px;
 `
 export const SocilaIcons = styled.div`
@@ -117,13 +117,13 @@ export const SocilaIcons = styled.div`
   }
 `
 export const SocialIconLink = styled.a`
-  color: #fff;
+  color: ${({theme}) => theme.colors.grey_1000};
   font-size: 1.5rem;
   transition: all 0.3s ease-out;
   line-height: 1rem;
 
   &:hover {
-    color: #39837D;
+    color: ${({theme}) => theme.colors.main_brand};
     transition: all 0.3s ease-out;
   }
   @media screen and (max-width:780px) {
@@ -131,13 +131,13 @@ export const SocialIconLink = styled.a`
   }
 `
 export const WebsiteDeveloper = styled.small`
-  color: #fff;
+  color: ${({theme}) => theme.colors.grey_1000};
   width: 100%;
   margin: 32px auto 0 auto;
   /* text-align: center; */
 `
 export const DeveloperLink = styled.a`
-  color: #39837D;
+  color: ${({theme}) => theme.colors.main_brand};
   font-weight: 700;
   font-size: 1rem;
   cursor: pointer;

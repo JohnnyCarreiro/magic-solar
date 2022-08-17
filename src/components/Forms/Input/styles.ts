@@ -23,14 +23,14 @@ export const Container = styled.div`
     margin-left: 0.45rem;
     > label {
       font: ${({theme}) => theme.texts.main_strong};
-      color: ${({theme}) => theme.colors.gray_600};
+      color: ${({theme}) => theme.colors.grey_900};
       text-transform: uppercase;
     }
     svg{
       height: 18px;
       width: auto;
       margin-right:0.5rem;
-      color:${({theme})=> theme.colors.primary};
+      color:${({theme})=> theme.colors.secondary_brand};
     }
   }
 `

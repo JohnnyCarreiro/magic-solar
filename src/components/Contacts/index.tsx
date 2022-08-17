@@ -19,6 +19,7 @@ import {
    TextWrapper,
    TopLine
 } from './styles'
+import { RedirectButton } from '../Button/RedirectButton'
 
 export const ContactSection:React.FC<InfoSectionProps> = (infoSectionProps) => {
   const {
@@ -67,20 +68,15 @@ export const ContactSection:React.FC<InfoSectionProps> = (infoSectionProps) => {
               >
                 <AddressIcon />{address}
               </ContactItem>
-              {/* <BtnWrapper>
-                <Button
+              <BtnWrapper>
+                <RedirectButton
                   primary={primary}
                   dark={dark}
-                  to={scrollToId}
                   href={scrollToId}
-                  smooth={true}
-                  duration={500}
-                  spy={true}
-                  offset={-80}
                 >
                   {buttonLabel}
-                </Button>
-              </BtnWrapper> */}
+                </RedirectButton>
+              </BtnWrapper>
             </TextWrapper>
           </Column1>
           <Column2>
