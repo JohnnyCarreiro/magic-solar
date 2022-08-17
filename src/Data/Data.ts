@@ -53,7 +53,7 @@ export const homeObjTwo = {
   buttonLabel: 'Saiba Mais',
   scrollToId:'contacts',
   //button
-  dark: false,
+  dark: true,
   primary: false,
 }
 export const services = [
@@ -95,7 +95,7 @@ export const homeObjThree = {
   buttonLabel: 'Saiba Mais',
   scrollToId:'contacts',
   //button
-  dark: false,
+  dark: true,
   primary: false,
 }
 
@@ -138,9 +138,9 @@ export const contactInfos = {
   //image
   img: require('../assets/images/contact.svg').default,
   alt: 'Logo da Magic Solar',
-  buttonLabel: 'Saiba Mais',
-  scrollToId:'how-we-work',
+  buttonLabel: 'Solicite uma visita',
+  scrollToId:'/agenda',
   //button
-  dark: false,
+  dark: true,
   primary: false,
 }

@@ -33,39 +33,42 @@ function Footer({ children }: FooterProps) {
             <FooterLinksItems>
               <FooterLinksTitle>Sobre Nós</FooterLinksTitle>
               <FooterLink
-                to={'about'}
-                smooth={true}
-                duration={500}
-                spy={true}
-                offset={-80}
+                // to={'about'}
+                href={'/#about'}
+                // smooth={true}
+                // duration={500}
+                // spy={true}
+                // offset={-80}
               >
                 A Megic Solar
               </FooterLink>
               <FooterLink
-                to={'how-we-work'}
-                smooth={true}
-                duration={500}
-                spy={true}
-                offset={-80}
+                // to={'how-we-work'}
+                href={'/#how-we-work'}
+                // smooth={true}
+                // duration={500}
+                // spy={true}
+                // offset={-80}
               >
                 Como Atuamos
               </FooterLink>
               <FooterLink
-                to={'results'}
-                smooth={true}
-                duration={500}
-                spy={true}
-                offset={-80}
+                // to={'results'}
+                href={'/#results'}
+                // smooth={true}
+                // duration={500}
+                // spy={true}
+                // offset={-80}
               >
                 Resultados
               </FooterLink>
               <FooterLink
-                to={''}
-                href={`termos`}
-                smooth={true}
-                duration={500}
-                spy={true}
-                offset={-80}
+                // to={''}
+                href={`/#termos`}
+                // smooth={true}
+                // duration={500}
+                // spy={true}
+                // offset={-80}
               >
                 Termos de serviços
               </FooterLink>
@@ -75,43 +78,45 @@ function Footer({ children }: FooterProps) {
               <FooterLinksTitle>Contate-nos</FooterLinksTitle>
               <Link href='/agenda' >
                 <FooterLink
-                  to={'/agenda'}
+                  // to={'/agenda'}
                   href={`/agenda`}
-                  smooth={true}
-                  duration={500}
-                  spy={true}
-                  offset={-80}
+                  // smooth={true}
+                  // duration={500}
+                  // spy={true}
+                  // offset={-80}
                 >
                   Solicite uma visita
                 </FooterLink>
               </Link>
               <Link href='/agenda' >
                 <FooterLink
-                  to={'/agenda'}
+                  // to={'/agenda'}
                   href={`/agenda`}
-                  smooth={true}
-                  duration={500}
-                  spy={true}
-                  offset={-80}
+                  // smooth={true}
+                  // duration={500}
+                  // spy={true}
+                  // offset={-80}
                 >
                   Tire suas Dúvidas
                 </FooterLink>
               </Link>
               <FooterLink
-                to={'solar-energy'}
-                smooth={true}
-                duration={500}
-                spy={true}
-                offset={-80}
+                // to={'solar-energy'}
+                href={'/#solar-energy'}
+                // smooth={true}
+                // duration={500}
+                // spy={true}
+                // offset={-80}
               >
                 A Energia solar
               </FooterLink>
               <FooterLink
-                to={'services'}
-                smooth={true}
-                duration={500}
-                spy={true}
-                offset={-80}
+                // to={'services'}
+                href={'/#services'}
+                // smooth={true}
+                // duration={500}
+                // spy={true}
+                // offset={-80}
               >
                 Processo de projetos
               </FooterLink>
@@ -243,8 +248,8 @@ function Footer({ children }: FooterProps) {
             </SocilaIcons >
           </SocialMediaWrapper>
           <WebsiteDeveloper>
-            Made with 💚  by: <DeveloperLink href="https://www.johnnycarreiro.com" target="_blank" aria-label="JohnnyCarreiro">
-              Johnny Carreiro
+            Made with 💙 by:<DeveloperLink href="https://www.johnnycarreiro.com" target="_blank" aria-label="JohnnyCarreiro">
+                 Johnny Carreiro
             </DeveloperLink>
           </WebsiteDeveloper>
         </SociaMedia>

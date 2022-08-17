@@ -17,7 +17,7 @@ type SubtitleProps = {
 
 export const InfoContainer = styled.div<ContainerProps>`
   color: #fff;
-  background: ${({lightBg = false}) => (lightBg ? '#f9f9f9' : '#000E29')};
+  background: ${({lightBg = false, theme}) => (lightBg ? theme.colors.grey_1000 : theme.colors.grey_100)};
 
   @media screen and (max-width: 768px) {
     padding: 100px 0;
@@ -60,7 +60,7 @@ export const TextWrapper = styled.div`
   padding-bottom: 60px;
 `
 export const TopLine = styled.p<ContainerProps>`
-  color:${({lightBg = false}) => (lightBg ? '#39837D' : '#AC9A52')};
+  color:${({lightBg = false, theme}) => (lightBg ? theme.colors.main_brand : theme.colors.secondary_brand)};
   font-size: 1rem;
   line-height: 1rem;
   font-weight: 700;
@@ -84,7 +84,7 @@ export const Subtitle = styled.div<SubtitleProps>`
   margin: 16px 0 35px 0;
   font-size: 1.125rem;
   line-height: 1.5rem;
-  color: ${({lightTextDesc = false}) => (lightTextDesc ? '#fff' : '#000E29'  )};
+  color: ${({lightTextDesc = false, theme}) => (lightTextDesc ? theme.colors.grey_1000 : theme.colors.grey_100 )};
 `
 export const BtnWrapper = styled.div`
   display: flex;
@@ -105,11 +105,11 @@ export const ContactItem = styled.a<SubtitleProps>`
   margin: 16px 0 24px 0;
   font-size: 1.25rem;
   line-height: 1.5rem;
-  color: ${({lightTextDesc = false}) => (lightTextDesc ? '#fff' : '#000E29'  )};
+  color: ${({lightTextDesc = false, theme}) => (lightTextDesc ? theme.colors.grey_1000 : theme.colors.grey_100 )};
 
   &:hover {
     cursor: pointer;
-    color: #AC9A52;
+    color: ${({theme})=> theme.colors.secondary_brand};
   }
 `
 export const PhoneIcon = styled(FaWhatsapp)`

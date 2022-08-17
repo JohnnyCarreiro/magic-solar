@@ -56,6 +56,7 @@ export const  HeroSection: React.FC<HeroSectionProps> = (heroSection) => {
             duration={500}
             spy={true}
             offset={-80}
+            dark={true}
           >
             {cta} {hover ? <ArrowForward/> : <ArrowRight/>}
           </Button>

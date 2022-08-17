@@ -8,7 +8,7 @@ interface Props {
   fontBig?: boolean
 }
 
-export const Button = styled(LinkS)<Props>`
+export const RedirectButton = styled.a<Props>`
   border-radius: 50px;
   background: ${({primary = false, theme})=> (primary ? theme.colors.main_brand : theme.colors.secondary_brand)};
   white-space: nowrap;
@@ -27,6 +27,7 @@ export const Button = styled(LinkS)<Props>`
 
   &:hover {
     transition: all 0.3s ease-in-out;
+    color: ${({dark = false, theme})=> (dark ? theme.colors.grey_1000 : theme.colors.grey_100)};
     color: ${({dark = false, theme})=> (dark ? theme.colors.grey_1000 : theme.colors.grey_100)};
     background: ${({primary = false, theme})=> (primary ?  theme.colors.secondary_brand : theme.colors.main_brand)};
   }

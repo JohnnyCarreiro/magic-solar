@@ -15,8 +15,7 @@ type SubtitleProps = {
 }
 
 export const InfoContainer = styled.div<ContainerProps>`
-  color: #fff;
-  background: ${({lightBg = false}) => (lightBg ? '#f9f9f9' : '#000E29')};
+  background: ${({lightBg = false, theme}) => (lightBg ? theme.colors.grey_900 : theme.colors.grey_300)};
 
   @media screen and (max-width: 768px) {
     padding: 100px 0;
@@ -59,7 +58,7 @@ export const TextWrapper = styled.div`
   padding-bottom: 60px;
 `
 export const TopLine = styled.p<ContainerProps>`
-  color:${({lightBg = false}) => (lightBg ? '#39837D' : '#AC9A52')};
+  color:${({lightBg = false,theme}) => (lightBg ? theme.colors.main_brand : theme.colors.secondary_brand)};
   font-size: 1rem;
   line-height: 1rem;
   font-weight: 700;
@@ -72,7 +71,7 @@ export const Heading = styled.h2<HeadingProps>`
   font-size: 3rem;
   line-height: 1.1;
   font-weight: 600;
-  color: ${({lightText = false}) => (lightText ? '#f7f8fa' : '#000E29')};
+  color: ${({lightText = false, theme}) => (lightText ? theme.colors.grey_900 : theme.colors.grey_100)};
 
   @media screen and (max-width: 480px) {
     font-size: 2rem;
@@ -83,7 +82,7 @@ export const Subtitle = styled.div<SubtitleProps>`
   margin: 16px 0 35px 0;
   font-size: 1.125rem;
   line-height: 1.5rem;
-  color: ${({lightTextDesc = false}) => (lightTextDesc ? '#fff' : '#000E29'  )};
+  color: ${({lightTextDesc = false, theme}) => (lightTextDesc ? theme.colors.grey_900 : theme.colors.grey_100)};
 `
 export const BtnWrapper = styled.div`
   display: flex;

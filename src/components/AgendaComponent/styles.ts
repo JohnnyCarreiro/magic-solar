@@ -11,7 +11,7 @@ export const Container = styled.section`
   overflow: hidden;
   background: linear-gradient(
     108deg,
-    rgba(57, 131, 125, 1) 0%,
+    rgba(47, 49, 146, 1) 0%,
     rgba(78, 177, 169, 1) 100%
   );
   padding-top: 40px;
@@ -30,7 +30,7 @@ export const FormWrapper = styled.div`
 `
 export const Icon = styled.a`
   margin: 32px 0 32px 0;
-  color: #fff;
+  color: ${({theme}) => theme.colors.grey_1000};
   font-weight: 700;
   font-size: 2rem;
   text-align: center;
@@ -50,7 +50,7 @@ export const FormContent = styled.div`
   }
 `
 export const Form = styled.form`
-  background: #000E29;
+  background: ${({theme}) => theme.colors.main_brand};
   max-width: 400px;
   width: 100%;
   height: auto;
@@ -75,7 +75,7 @@ export const FormTitle = styled.h2`
 export const FormLabel = styled.label`
   margin-bottom: 8px;
   font-size: 0.875rem;
-  color: #fff;
+  color: #fff !important;
 `
 export const FormInput = styled.input`
   padding: 16px 16px;
@@ -84,7 +84,7 @@ export const FormInput = styled.input`
   border-radius: 4px;
 `
 export const FormButton = styled.button`
-  background: #39837D;
+  background: ${({theme}) => theme.colors.main_brand};
   padding: 16px 0;
   border: none;
   border-radius: 4px;

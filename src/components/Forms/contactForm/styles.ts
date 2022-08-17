@@ -6,7 +6,7 @@ interface ContainerProps extends ThemeProps<Theme> {
 }
 
 export const ModalBackground = styled.div<ContainerProps>`
- background: #000E29;
+ background: ${({theme}) => theme.colors.main_brand};
   max-width: 600px;
   width: 100%;
   height: auto;
@@ -24,7 +24,7 @@ export const ModalBackground = styled.div<ContainerProps>`
 `
 export const FormTitle = styled.h2`
   margin-bottom: 40px;
-  color: #fff;
+  color: ${({theme}) => theme.colors.grey_1000};
   font-size: 1.25;
   font-weight: 600;
   text-align: center;
@@ -33,6 +33,7 @@ export const RegistrationInputs = styled.div`
   display: flex;
   flex-direction: column;
   margin-top: 2rem;
+  color: ${({theme}) => theme.colors.grey_1000};
 `
 export const RegistrationName = styled.div`
   width: 100%;

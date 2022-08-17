@@ -1,11 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 
-import { ThemeType } from './theme'
-
-interface Props {
-    theme: ThemeType
-}
-export const GlobalStyle = createGlobalStyle<Props>`
+export const GlobalStyle = createGlobalStyle`
   *, *::after, *::before {
     box-sizing:border-box;
     margin: 0;
@@ -13,16 +8,6 @@ export const GlobalStyle = createGlobalStyle<Props>`
     padding:0;
   }
 
-  :root{
-    --white:#FFFFFF;
-
-    --gray-100:#E1E1E6;
-    --gray-300:#A8A8B3;
-    --gray-800:#29292E;
-    --gray-850: #1F2729;
-    --gray-900:#121214;
-
-  }
 
   html{
     @media (max-width: 1080px){
@@ -35,17 +20,20 @@ export const GlobalStyle = createGlobalStyle<Props>`
   }
 
   body{
-    background:var(--gray-900);
-    color:var(--white);
+    background:${({theme}) => theme.colors.grey_900};
+    color: ${({theme}) => theme.colors.grey_100};
   }
 
   body, input, textarea, select, button{
+    color: ${({theme}) => theme.colors.grey_100};
     font: 400 1rem 'EB Garamond', serif;
   }
   span, small {
+    color: ${({theme}) => theme.colors.grey_100};
     font: 400 0.875rem 'EB Garamond', serif;
   }
   strong {
+    color: ${({theme}) => theme.colors.grey_100};
     font: 600 1rem 'EB Garamond', serif;
   }
 

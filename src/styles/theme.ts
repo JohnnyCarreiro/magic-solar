@@ -1,23 +1,26 @@
-const defaultTheme = {
+export const defaultTheme = {
   colors:{
-      gray_100: '#00000F',
-      gray_200: '#343940',
-      gray_300: '#697380',
-      gray_400: '#9DACBF',
-      gray_500: '#D1E5FF',
-      gray_600: '#DAEAFF',
-      gray_700: '#E4EFFF',
-      gray_800: '#EDF5FF',
-      gray_900: '#F6FAFF',
-      gray_1000: '#F7FAFF',
+      grey_100: '#1c1c25',
+      grey_200: '#1e1e25',
+      grey_300: '#3c3c49',
+      grey_400: '#5a5a6e',
+      grey_500: '#787992',
+      grey_600: '#9393a8',
+      grey_700: '#aeaebe',
+      grey_800: '#c9c9d3',
+      grey_900: '#e4e4e9',
+      grey_1000: '#f4f4f9',
+
+      main_brand: '#2f3192',
+      secondary_brand: '#fdcc00',
 
       main:'#39837D',
       primary: '#39837D',
       secondary: '#AC9A52',
 
-      alert: '#C1E6C7',
-      danger: '#E60819',
-      success:'#00F92A',
+      alert: '#5e60df',
+      danger: '#df573d',
+      success:'#a7df3d',
 
   },
   texts:{
@@ -29,6 +32,3 @@ const defaultTheme = {
     small_text:'300 0.875rem/1.3125rem EB Garamond, serif'//p, a, small ..
   }
 }
-
-export type ThemeType = typeof defaultTheme
-export default defaultTheme

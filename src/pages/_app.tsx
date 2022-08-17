@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { AppProps } from 'next/app'
 import { ThemeProvider } from 'styled-components'
 
-import theme from 'styles/theme'
+import {defaultTheme} from 'styles/theme'
 import { GlobalStyle } from 'styles/GlobalStyle'
 import { Navbar } from '@/components/Navbar'
 import { Sidebar } from '@/components/Sidebar'
@@ -19,7 +19,7 @@ export default function MyApp({Component, pageProps}:MyAppProps){
   }
 
     return(
-        <ThemeProvider theme={theme} >
+        <ThemeProvider theme={defaultTheme} >
           <ToastProvider>
             <Navbar toggle={toggle} />
             <Sidebar isOpen={isOpen} toggle={toggle} />

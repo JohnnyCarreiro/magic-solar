@@ -16,14 +16,14 @@ export const Container = styled.div`
     align-items: center;
     > label {
       font: ${({theme}) => theme.texts.main_strong};
-      color: ${({theme}) => theme.colors.gray_600};
+      color: ${({theme}) => theme.colors.grey_900};
       text-transform: uppercase;
     }
     svg{
       height: 18px;
       width: auto;
       margin-right:0.5rem;
-      color:${({theme})=> theme.colors.primary};
+      color:${({theme})=> theme.colors.secondary_brand};
     }
   }
 `
@@ -101,7 +101,7 @@ export const Error = styled(Tooltip)`
     margin-left:1rem;
     svg{
       margin:0;
-      color:${({theme})=> theme.colors.gray_1000};
+      color:${({theme})=> theme.colors.grey_1000};
       cursor: pointer;
 
     }
