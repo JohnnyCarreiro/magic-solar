@@ -16,10 +16,10 @@ export class DomainMailProvider implements IMailProvider{
         this.pass = String(process.env.EMAIL_PASS)
 
         this.transporter = nodemailer.createTransport({
-          name:'selecttourviagens.com.br',
+          name:'magicsolar.com.br',
           host:this.host,
           port:this.port,
-          secure: false,
+          secure: true,
           auth:{
               user:this.user,
               pass:this.pass,

@@ -17,7 +17,7 @@ export class CreateContactUseCase {
                 address: data.email
               },
               from:{
-                name:'Magic Solat',
+                name:'Magic Solar',
                 address:'contato@magicsolar.com.br'
               },
               subject:`Magic Solar - ${data.subject}`,
@@ -26,7 +26,7 @@ export class CreateContactUseCase {
           //Email to system
           await this.mailProvider.sendMail({
               to:{
-                name:'Magic Solat',
+                name:'Magic Solar',
                 address:'contato@magicsolar.com.br'
               },
               // from:{
@@ -34,10 +34,10 @@ export class CreateContactUseCase {
               //   address: data.email
               // },
               from:{
-                name:'Magic Solat',
+                name:'Magic Solar',
                 address:'contato@magicsolar.com.br'
               },
-              subject:`Contato do Site - ${data.subject}`,
+              subject:`Contato do Site - ${data.name} - ${data.subject}`,
               body:`
                 Nome: ${data.name}, <br/>
                 telefone: ${data.phone}, <br/>

@@ -44,7 +44,6 @@ export default class MyDocument extends Document {
       <Html lang="pt-br" >
         <Head>
           <meta charSet="utf-8" />
-          <meta name="viewport" content="width=device-width, initial-scale=1" />
           <link rel="shortcut icon" href="/favicon.png" type="image/png" />
           <link rel="icon" type="image/x-icon" href="/favicon.png" />
           <meta name="theme-color" content="#2f3192" />
