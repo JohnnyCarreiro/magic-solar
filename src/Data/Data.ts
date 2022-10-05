@@ -5,10 +5,19 @@ export const navLinks = [
   {name: 'Energia Solar',id: 'solar-energy'},
   {name: 'Contatos',id: 'contacts'},
 ]
+
+export const metaTags = {
+  about_us_section: {
+    name: 'Energia Solar - Magic Solar - Soluções em energia Solar',
+    image: require('../assets/images/meta_image.png').default,
+    content: 'Faça parte da nova realidade do mundo, passe a gerar sua própria energia elétrica. Cuidamos de tudo no seu projeto de energia solar. Você não se preecupa com nada!'
+  }
+}
+
 export const heroSection = {
   heading: 'Sua empresa está pronta para o presente?',
   description:
-    'Faça parte da nova realidade do mundo, passe a gerar sua própria energia elétrica e fuja das incertezas de geração, disponibilidade e tarifas. Transformando o que hoje é um passivo em um ativo.',
+    'Faça parte da nova realidade do mundo, passe a gerar sua própria energia elétrica e fuja das incertezas de geração, disponibilidade e tarifas. Transformando o que hoje é um passivo em um ativo. ',
   cta: 'Saiba Mais',
   scrollToId: 'solar-energy'
 }
@@ -23,7 +32,7 @@ export const homeObjOne = {
   headLine:
     'Somos a MAGIC SOLAR',
   description:
-    'A MAGIC SOLAR foi fundada no ano de 2015 com o intuito de proporcionar um serviço especializado e concreto na implementação de sistemas de geração distribuída de energia renovável.',
+    '',
     imgStart: false,
     //image
   img: require('../assets/images/logo.svg').default,
