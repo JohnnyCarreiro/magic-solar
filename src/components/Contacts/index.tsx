@@ -63,7 +63,7 @@ export const ContactSection:React.FC<InfoSectionProps> = (infoSectionProps) => {
                 <EmailIcon />{email}
               </ContactItem>
               <ContactItem
-                href={`https://goo.gl/maps/2GrZzeFdesDNbAuz8`}
+                href={`https://goo.gl/maps/UM8c19hR925YCxFA6`}
                 target="_blank"
               >
                 <AddressIcon />{address}

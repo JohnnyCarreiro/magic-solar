@@ -31,7 +31,7 @@ export const Sidebar:React.FC<SidebarProps> = ({ children, isOpen = false, toggl
           ))}
         </SidebarMenu>
         <SidebarBtnWrapper>
-          <Link prefetch href='/agenda' passHref >
+          <Link href='/agenda' passHref >
             <SidebarBtnLink>Agenda</SidebarBtnLink>
           </Link>
         </SidebarBtnWrapper>
